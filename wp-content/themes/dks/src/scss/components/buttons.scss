@@ -1,0 +1,14 @@
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: $montserrat;
+  font-weight: 700;
+  background: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
