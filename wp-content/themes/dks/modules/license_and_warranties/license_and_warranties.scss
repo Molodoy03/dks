@@ -1,0 +1,244 @@
+@import '../../src/scss/components/vars';
+
+section.license_and_warranties {
+  position: relative;
+  background-color: $semi-black;
+  margin-top: 100px;
+
+  @media (max-width: $lg) {
+    overflow: hidden;
+    padding-top: 50px;
+  }
+
+  & > svg {
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 0;
+
+    @media (max-width: $lg) {
+      max-width: none;
+    }
+  }
+
+  .cols {
+    display: flex;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
+
+    .col {
+      position: relative;
+      z-index: 2;
+
+      h2 {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0;
+
+        img {
+          margin-right: 24px;
+
+          @media (max-width: $xs) {
+            margin-right: 10px;
+            max-width: 50px;
+            max-height: 50px;
+          }
+        }
+      }
+
+      &:first-of-type {
+        margin-right: 176px;
+
+        @media (max-width: 1600px) {
+          margin-right: 80px;
+        }
+
+        @media (max-width: $lg) {
+          margin: 0 0 73px 0;
+        }
+      }
+
+      &.license {
+        max-width: 699px;
+
+        @media (max-width: $lg) {
+          max-width: 100%;
+        }
+
+        h2 {
+          margin: 0 0 52px 0;
+
+          @media (max-width: $md) {
+            margin: 0 0 35px 0;
+          }
+
+          @media (max-width: $sm) {
+            margin: 0 0 20px 0;
+          }
+
+          @media (max-width: $xs) {
+            margin: 0 0 11px 0;
+          }
+        }
+
+        .text {
+          font-size: 16px;
+          line-height: 26px;
+          color: $white;
+        }
+
+        .licenses {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 52px -15px -69px;
+
+          @media (max-width: $lg) {
+            margin: 40px -15px -15px;
+          }
+
+          @media (max-width: $md) {
+            margin: 40px -10px -10px;
+          }
+
+          @media (max-width: $xs) {
+            margin: 19px -10px -10px;
+          }
+
+          .license {
+            margin: 0 15px 15px;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 35px 6px rgba(40, 37, 37, 0.1);
+            border-radius: 4px;
+
+            @media (max-width: $md) {
+              max-width: calc(50% - 30px);
+            }
+
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &.warranty {
+        padding: 100px 0 20px 0;
+
+        @media (max-width: $lg) {
+          padding: 0 0 50px 0;
+        }
+
+        h2 {
+          margin: 0 0 47px 0;
+
+          @media (max-width: $xs) {
+            margin: 0 0 30px 0;
+          }
+        }
+
+        h6 {
+          color: $white;
+          margin: 0 0 33px 0;
+
+          @media (max-width: $xs) {
+            margin: 0 0 10px 0;
+          }
+
+          &:last-of-type {
+            margin: 0;
+          }
+
+          &:first-of-type {
+            color: $orange;
+          }
+        }
+
+        .bottom-block {
+          border-top: 2px solid $gray-6;
+          border-bottom: 2px solid $gray-6;
+          padding: 30px 0 36px;
+          display: flex;
+          margin-top: 47px;
+
+          @media (max-width: $md) {
+            flex-direction: column;
+            padding: 20px 0 23px;
+          }
+
+          @media (max-width: $xs) {
+            margin-top: 30px;
+            flex-direction: column;
+          }
+
+          .text-block {
+            display: flex;
+            align-items: center;
+
+            svg {
+              display: block;
+              min-width: 40px;
+              max-width: 40px;
+              max-height: 40px;
+              min-height: 40px;
+              margin-right: 15px;
+
+              @media (max-width: $sm) {
+                margin-right: 10px;
+              }
+            }
+
+            .text {
+              &.white {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 22px;
+                text-transform: uppercase;
+                color: $white;
+                margin-bottom: -7px;
+
+                @media (max-width: $md) {
+                  margin-bottom: 3px;
+                }
+
+                @media (max-width: $xs) {
+                  margin: 0;
+                }
+              }
+
+              &.gray {
+                font-size: 14px;
+                line-height: 22px;
+                color: $gray-3;
+              }
+            }
+          }
+
+          a {
+            margin-left: 49px;
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 500;
+            color: $orange;
+
+            @media (max-width: 1600px) {
+              margin-left: 30px;
+            }
+
+            @media (max-width: $md) {
+              margin: 10px 0 0 55px;
+            }
+
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

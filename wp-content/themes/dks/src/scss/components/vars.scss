@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
 
 $montserrat: 'Montserrat', sans-serif;
 
@@ -7,13 +7,19 @@ $sm: 768px;
 $md: 992px;
 $lg: 1200px;
 
-// FONTS
-$font-size-base: 18px;
-$font-family-base: $montserrat;
-
 //COLORS
 $white: #fff;
 $black: #000;
+$semi-black: #282525;
+$orange: #FF5718;
+$orange-2: #FEE1DF;
+$gray: #838383;
+$semi-gray: #EFECEC;
+$gray-2: #F8F8F8;
+$gray-3: #838383;
+$gray-4: #FBFAFA;
+$gray-5: #F8F8F8;
+$gray-6: #3A3737;
 
 //BASE
 $delay: 0.15s;

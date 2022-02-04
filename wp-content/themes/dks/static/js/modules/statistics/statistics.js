@@ -1,0 +1,1 @@
+!function(t){t(document).on("ready",(function(){let e=t(".statistics .block h3 span");e.length&&e.counterUp({delay:10,time:1e3})}))}(jQuery);

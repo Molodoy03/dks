@@ -1,0 +1,111 @@
+@import '../../src/scss/components/vars';
+
+section.reviews {
+  padding: 50px 0 107px;
+
+  @media (max-width: $lg) {
+    padding: 50px 0 80px;
+  }
+
+  @media (max-width: $md) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: $sm) {
+    padding: 50px 0 30px;
+  }
+
+  h2 {
+    margin: 0 0 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .sources {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    @media (max-width: $sm) {
+      margin: 0 -10px;
+    }
+
+    .source {
+      width: 25%;
+      max-width: 261px;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 162%;
+      background-color: $white;
+      box-shadow: 4px 4px 35px 6px rgba(234, 226, 226, 0.3);
+      border-radius: 4px;
+      padding: 30px;
+
+      @media (max-width: $sm) {
+        width: calc(50% - 20px);
+        margin: 0 10px 20px;
+        padding: 20px 7px 10px;
+      }
+
+      &:nth-child(even) {
+        margin-top: 40px;
+
+        @media (max-width: $sm) {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-child(1), &:nth-child(2), &:last-of-type {
+        .button {
+          background-color: rgba(0,0,0,0);
+          border: 0;
+          color: $orange;
+
+          &::before {
+            display: none;
+          }
+
+          svg path {
+            fill: $orange;
+          }
+        }
+      }
+
+      .logo {
+        margin-bottom: 20px;
+
+        @media (max-width: $sm) {
+          margin-bottom: 5px;
+        }
+      }
+
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 11px;
+        text-align: center;
+
+        @media (max-width: $sm) {
+          margin-bottom: 1px;
+        }
+      }
+
+      .button {
+        padding: 6px 18px;
+
+        @media (max-width: $sm) {
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+}

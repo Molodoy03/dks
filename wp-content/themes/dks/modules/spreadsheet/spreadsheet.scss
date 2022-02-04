@@ -1,0 +1,227 @@
+@import '../../src/scss/components/vars';
+
+section.spreadsheet {
+  padding: 50px 0 100px 0;
+
+  @media (max-width: $xs) {
+    padding: 25px 0 52px 0;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 75px 0;
+    text-transform: uppercase;
+
+    @media (max-width: $xs) {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .spreadsheets {
+    .spreadsheet {
+      margin-bottom: 43px;
+      border: 2px solid $semi-gray;
+      box-shadow: 4px 4px 35px 6px rgba(234, 226, 226, 0.3);
+      border-radius: 5px;
+
+      @media (max-width: $sm) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $xs) {
+        margin-bottom: 20px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .cols {
+        display: flex;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        margin-top: -1px;
+
+        @media (max-width: $xs) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        .col {
+          width: 100%;
+          background-color: $semi-black;
+          padding: 20px 19px;
+          min-height: 60px;
+          display: flex;
+          align-items: center;
+          height: auto;
+
+          &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+            max-width: 292px;
+
+            @media (max-width: $sm) {
+              max-width: 100%;
+            }
+          }
+
+          &:nth-child(1) {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            min-width: 230px;
+
+            @media (max-width: $sm) {
+              display: none;
+            }
+          }
+
+          &:last-of-type {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            @media (max-width: $sm) {
+              display: none;
+            }
+          }
+
+          @media (max-width: $sm) {
+            &:nth-child(2) {
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+            }
+
+            &:nth-child(3) {
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+            }
+          }
+
+          @media (max-width: $xs) {
+            text-align: center;
+            min-height: 0;
+            padding: 6px 5px;
+            display: flex;
+            flex-direction: column;
+          }
+
+          span {
+            font-size: 13px;
+            color: $gray-3;
+            margin-left: 2px;
+            display: contents;
+
+            @media (max-width: $xs) {
+              display: block;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .rows-holder {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .row {
+          width: 100%;
+          display: flex;
+          font-size: 14px;
+
+          &:nth-child(odd) {
+            background-color: $gray-5;
+          }
+
+          &:nth-child(even) {
+            background-color: $white;
+          }
+
+          &:last-of-type .element {
+            border-bottom: 0;
+          }
+
+          @media (max-width: $sm) {
+            flex-wrap: wrap;
+          }
+
+          .element {
+            width: 100%;
+            padding: 20px 19px;
+            display: flex;
+            align-items: center;
+            min-height: 113px;
+            border-right: 1px solid $semi-gray;
+            border-bottom: 1px solid $semi-gray;
+            word-break: break-word;
+
+            @media (max-width: $xs) {
+              padding: 10px;
+              line-height: 20px;
+              min-height: 0;
+            }
+
+            &:nth-child(1) {
+              font-weight: 600;
+              font-size: 15px;
+            }
+
+            &:last-of-type {
+              border-right: 0;
+
+              @media (max-width: $xs) {
+                font-size: 12px;
+              }
+            }
+
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+              max-width: 292px;
+
+              @media (max-width: $sm) {
+                max-width: 100%;
+              }
+            }
+
+            &:nth-child(1) {
+              min-width: 230px;
+
+              @media (max-width: $sm) {
+                min-width: 0;
+                width: 100%;
+              }
+            }
+
+            @media (max-width: $sm) {
+              &:nth-child(2), &:nth-child(3) {
+                width: 50%;
+              }
+            }
+
+            .icon {
+              width: 70px;
+              height: 70px;
+              min-width: 70px;
+              min-height: 70px;
+              margin-right: 19px;
+
+              @media (max-width: $xs) {
+                width: 40px;
+                height: 40px;
+                min-width: 40px;
+                min-height: 40px;
+                margin-right: 10px;
+              }
+
+              img {
+                display: block;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

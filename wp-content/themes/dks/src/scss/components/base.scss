@@ -8,14 +8,14 @@ html, body {
 }
 
 body {
-  font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-family: $montserrat;
+  font-size: 18px;
   font-weight: 400;
-  color: $black;
+  color: $semi-black;
   background-color: $white;
-  display: flex;
-  height: auto;
   margin: 0;
+  //display: flex;
+  //height: auto;
 }
 
 img {
@@ -23,28 +23,24 @@ img {
   height: auto;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-  .footer {
-    margin-top: auto;
-  }
-}
+//.wrapper {
+//  width: 100%;
+//  min-height: 100vh;
+//  overflow: hidden;
+//  position: relative;
+//  display: flex;
+//  flex-direction: column;
+//
+//  .footer {
+//    margin-top: auto;
+//  }
+//}
 
 .container {
   box-sizing: content-box;
-  max-width: 1200px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 0 15px;
-
-  &.wide {
-    max-width: 1216px;
-  }
 }
 
 a {
@@ -95,7 +91,7 @@ img.alignright, .wp-caption.alignright {
 }
 
 .wp-caption-text {
-  font-family: $font-family-base;
+  font-family: $montserrat;
   font-size: 18px;
 }
 

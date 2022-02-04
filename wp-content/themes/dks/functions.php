@@ -1,4 +1,6 @@
 <?php
+const THEME_NAME = 'dks';
+
 add_theme_support('post-thumbnails');
 
 /**
