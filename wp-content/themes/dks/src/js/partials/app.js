@@ -38,4 +38,16 @@
             });
         });
     }
+
+    let footerColName = $('.footer .col .col-name');
+    if(footerColName.length && $(window).width() < '576') {
+        footerColName.on('click', function() {
+            $(this).toggleClass('opened');
+            let colContent = $(this).next();
+
+            if(colContent.length) {
+                colContent.slideToggle(200);
+            }
+        });
+    }
 })(jQuery);

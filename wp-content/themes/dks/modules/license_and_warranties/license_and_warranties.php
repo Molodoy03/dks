@@ -7,7 +7,10 @@ $s_text_2_2 = get_sub_field('s_text_2_2');
 $s_email = get_sub_field('s_email');
 
 if (!empty($s_text_1) || !empty($s_text_2_1) || !empty($s_text_2_2) || have_rows('s_licenses')) {
-    wp_enqueue_style('license_and_warranties_styles', get_template_directory_uri() . '/static/css/modules/license_and_warranties/license_and_warranties.css', '', '', 'all'); ?>
+    wp_enqueue_style('fancybox_styles', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', '', '', 'all');
+    wp_enqueue_style('license_and_warranties_styles', get_template_directory_uri() . '/static/css/modules/license_and_warranties/license_and_warranties.css', '', '', 'all');
+
+    wp_enqueue_script('fancybox_js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', '', '', true); ?>
 
     <section class="license_and_warranties">
         <svg width="987" height="713" viewBox="0 0 987 713" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +42,7 @@ if (!empty($s_text_1) || !empty($s_text_2_1) || !empty($s_text_2_2) || have_rows
                                     $license = get_sub_field('license');
 
                                     if (!empty($license)) { ?>
-                                        <div class="license">
+                                        <div class="license" data-fancybox="gallery" href="<?php echo wp_get_attachment_image_url($license, 'full'); ?>">
                                             <?php echo wp_get_attachment_image($license, 'full'); ?>
                                         </div>
                                     <?php }

@@ -1,0 +1,1 @@
+!function(t){t(document).on("ready",(function(){let e=t(".contacts_addresses .block .left-block button");e.length&&e.on("click",(function(){t(this).toggleClass("active");let e=t(this).closest(".block").find(".right-block");e.length&&e.slideToggle(200)}))}))}(jQuery);

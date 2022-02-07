@@ -1,0 +1,226 @@
+@import '../../src/scss/components/vars';
+
+section.contacts_info {
+  position: relative;
+
+  & > svg {
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    left: 0;
+    max-width: 100%;
+
+    @media (max-width: $lg) {
+      max-width: 30%;
+    }
+
+    @media (max-width: $sm) {
+      top: -200px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 25%;
+      top: -300px;
+    }
+  }
+
+  h1 {
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      margin-bottom: 0 0 45px 0;
+    }
+
+    @media (max-width: $xs) {
+      margin: 0 0 37px 0;
+    }
+  }
+
+  .info-blocks {
+    background-color: $white;
+    box-shadow: 4px 4px 35px 6px rgba(234, 226, 226, 0.3);
+    border-radius: 4px;
+    padding: 44px 0 48px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: $md) {
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      padding: 35px 0;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $xs) {
+      padding: 30px 0 10px 0;
+      margin-bottom: 30px;
+    }
+
+    .block {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33.33%;
+      position: relative;
+      padding: 0 10px;
+
+      @media (max-width: $lg) {
+        width: 50%;
+        margin-bottom: 40px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      @media (max-width: $sm) {
+        width: 100%;
+        padding: 0 20px 20px;
+        margin-bottom: 38px;
+
+        &:nth-child(2) {
+          &::after {
+            display: block;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        width: 2px;
+        height: calc(100% - 50px);
+        background-color: $semi-gray;
+
+        @media (max-width: $sm) {
+          width: calc(100% - 40px);
+          height: 2px;
+          bottom: 0;
+          top: auto;
+          left: 0;
+        }
+      }
+
+      &:last-of-type::after {
+        display: none;
+      }
+
+      h5 {
+        margin: 0 0 20px 0;
+
+        @media (max-width: $xs) {
+          font-size: 19px;
+        }
+      }
+
+      .phone, .email {
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 18px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        span {
+          color: $orange;
+          margin-bottom: 5px;
+          font-weight: 500;
+        }
+
+        a {
+          color: $gray-3;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -4px 30px;
+
+        .link {
+          margin: 0 4px;
+        }
+      }
+
+      .link {
+        margin-top: 20px;
+        border: 2px solid $orange;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+
+        @media (max-width: $xs) {
+          margin-top: 12px;
+        }
+
+        &:hover {
+          background-color: $orange;
+
+          svg path {
+            fill: $white;
+          }
+        }
+
+        svg {
+          display: block;
+          max-width: 22px;
+
+          path {
+            transition: fill $delay;
+          }
+        }
+      }
+
+      .error-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
+        color: $gray-3;
+
+        button {
+          color: $orange;
+          transition: color $delay;
+          font-weight: 500;
+
+          &:hover {
+            color: $semi-black;
+          }
+        }
+      }
+    }
+  }
+}

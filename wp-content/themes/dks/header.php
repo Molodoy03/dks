@@ -40,8 +40,8 @@
 <div class="wrapper">
     <header class="header">
         <?php
-        $t_working_mode = get_field('t_working_mode', 'options');
-        $t_email = get_field('t_email', 'options');
+        $t_working_mode = get_field('t_working_mode', 'option');
+        $t_email = get_field('t_email', 'option');
         $t_phone_number = get_field('t_phone_number', 'option');
 
         if (!empty($t_working_mode) || !empty($t_email) || !empty($t_phone_number)) { ?>
@@ -89,8 +89,8 @@
             <div class="container">
                 <div class="holder">
                     <?php
-                    $h_logo = get_field('h_logo', 'options');
-                    $h_opisanie = get_field('h_opisanie', 'options');
+                    $h_logo = get_field('h_logo', 'option');
+                    $h_opisanie = get_field('h_opisanie', 'option');
 
                     if (!empty($h_logo) || !empty($h_opisanie)) { ?>
                         <div class="logo">
@@ -114,8 +114,8 @@
 
                             <div class="mob-sections">
                                 <?php
-                                $t_working_mode = get_field('t_working_mode', 'options');
-                                $t_email = get_field('t_email', 'options');
+                                $t_working_mode = get_field('t_working_mode', 'option');
+                                $t_email = get_field('t_email', 'option');
                                 $t_phone_number = get_field('t_phone_number', 'option');
 
                                 if (!empty($t_working_mode)) { ?>
@@ -165,7 +165,7 @@
                                                 $ssylka = get_sub_field('ssylka');
 
                                                 if (!empty($ikonka) && !empty($ssylka)) { ?>
-                                                    <a href="<?php echo $ssylka; ?>">
+                                                    <a href="<?php echo $ssylka; ?>" target="_blank">
                                                         <?php echo $ikonka; ?>
                                                     </a>
                                                 <?php }
@@ -196,7 +196,7 @@
                                     $ssylka = get_sub_field('ssylka');
 
                                     if (!empty($ikonka) && !empty($ssylka)) { ?>
-                                        <a href="<?php echo $ssylka; ?>">
+                                        <a href="<?php echo $ssylka; ?>" target="_blank">
                                             <?php echo $ikonka; ?>
                                         </a>
                                     <?php }

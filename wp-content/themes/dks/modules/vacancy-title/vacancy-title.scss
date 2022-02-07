@@ -1,0 +1,51 @@
+@import '../../src/scss/components/vars';
+
+section.vacancy-title {
+  padding-bottom: 50px;
+  position: relative;
+
+  & > svg {
+    position: absolute;
+    z-index: -1;
+    top: -130px;
+    left: 0;
+    max-width: 100%;
+
+    @media (max-width: $lg) {
+      max-width: 30%;
+    }
+
+    @media (max-width: $sm) {
+      top: -200px;
+    }
+
+    @media (max-width: $xs) {
+      max-width: 25%;
+      top: -300px;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 162%;
+    max-width: 1136px;
+    margin: 50px 0 0 146px;
+
+    @media (max-width: $lg) {
+      margin-left: 0;
+    }
+
+    @media (max-width: $sm) {
+      margin: 40px auto 0;
+    }
+
+    @media (max-width: $xs) {
+      margin: 30px auto 0;
+    }
+  }
+}

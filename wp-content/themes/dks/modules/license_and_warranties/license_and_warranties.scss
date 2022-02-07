@@ -7,6 +7,7 @@ section.license_and_warranties {
 
   @media (max-width: $lg) {
     overflow: hidden;
+    margin-top: 0;
     padding-top: 50px;
   }
 
@@ -114,13 +115,38 @@ section.license_and_warranties {
             box-sizing: border-box;
             box-shadow: 4px 4px 35px 6px rgba(40, 37, 37, 0.1);
             border-radius: 4px;
+            cursor: pointer;
+            position: relative;
 
             @media (max-width: $md) {
               max-width: calc(50% - 30px);
             }
 
+            &::before {
+              opacity: 0;
+              transition: opacity $delay;
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: calc(100% - 20px);
+              height: calc(100% - 20px);
+              border: 10px solid $white;
+              border-radius: 4px;
+              background-color: rgba($semi-black, 0.4);
+              background-image: url("data:image/svg+xml,%0A%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.1 24.9L24.9 20.7C26.25 18.6 27 16.2 27 13.5C27 6 21 0 13.5 0C6 0 0 6 0 13.5C0 21 6 27 13.5 27C16.2 27 18.6 26.25 20.7 24.9L24.9 29.1C26.1 30.3 27.9 30.3 29.1 29.1C30.3 27.9 30.3 26.1 29.1 24.9ZM13.5 24C7.65 24 3 19.35 3 13.5C3 7.65 7.65 3 13.5 3C19.35 3 24 7.65 24 13.5C24 19.35 19.2 24 13.5 24Z' fill='white'/%3E%3Cpath d='M19.5 12H15V7.5C15 6.6 14.4 6 13.5 6C12.6 6 12 6.75 12 7.5V12H7.5C6.75 12 6 12.6 6 13.5C6 14.4 6.6 15 7.5 15H12V19.5C12 20.4 12.6 21 13.5 21C14.4 21 15 20.4 15 19.5V15H19.5C20.4 15 21 14.4 21 13.5C21 12.6 20.25 12 19.5 12Z' fill='white'/%3E%3C/svg%3E%0A");
+              background-size: 30px;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            &:hover::before {
+              opacity: 1;
+            }
+
             img {
               display: block;
+              border-radius: 4px;
             }
           }
         }

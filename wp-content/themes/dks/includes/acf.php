@@ -40,6 +40,12 @@ function modules()
                 get_template_part('modules/statistics/statistics');
             } elseif (get_row_layout() == 'license_and_warranties') {
                 get_template_part('modules/license_and_warranties/license_and_warranties');
+            } elseif (get_row_layout() == 'faq') {
+                get_template_part('modules/faq/faq');
+            } elseif (get_row_layout() == 'about_us') {
+                get_template_part('modules/about_us/about_us');
+            } elseif (get_row_layout() == 'documentation') {
+                get_template_part('modules/documentation/documentation');
             }
         }
     }
