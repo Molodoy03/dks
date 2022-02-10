@@ -1,0 +1,248 @@
+@import '../../src/scss/components/vars';
+
+section.export_work {
+  padding-bottom: 110px;
+
+  @media (max-width: $lg) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 0;
+  }
+
+  h2.main {
+    display: none;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: $md) {
+      display: block;
+    }
+  }
+
+  .works-slider {
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: $md) {
+        flex-direction: column;
+      }
+
+      & > .control-box {
+        display: none;
+
+        @media (max-width: $xs) {
+          display: flex;
+        }
+      }
+
+      .left-block {
+        max-width: 714px;
+        padding-left: 20px;
+
+        @media (max-width: $lg) {
+          max-width: 600px;
+          padding-left: 0;
+        }
+
+        @media (max-width: $md) {
+          max-width: 100%;
+        }
+
+        .control-box {
+          @media (max-width: $xs) {
+            display: none;
+          }
+        }
+
+        h2 {
+          text-transform: uppercase;
+          margin-bottom: 30px;
+
+          @media (max-width: $md) {
+            display: none;
+          }
+        }
+
+        h5 {
+          margin-bottom: 23px;
+          padding-left: 146px;
+
+          @media (max-width: $lg) {
+            padding-left: 0;
+          }
+
+          @media (max-width: $sm) {
+            margin-bottom: 8px;
+          }
+        }
+
+        .address {
+          color: $orange;
+          font-weight: 600;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+          text-transform: uppercase;
+          padding-left: 146px;
+
+          @media (max-width: $lg) {
+            padding-left: 0;
+          }
+
+          @media (max-width: $sm) {
+            margin-bottom: 20px;
+          }
+
+          svg {
+            display: block;
+            margin-right: 5px;
+          }
+        }
+
+        .content {
+          font-size: 16px;
+          line-height: 26px;
+          color: $gray-3;
+          padding-left: 146px;
+
+          @media (max-width: $lg) {
+            padding-left: 0;
+          }
+
+          p {
+            margin: 0 0 15px 0;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .photos {
+        width: 100%;
+        max-width: 870px;
+        margin-left: 16px;
+
+        @media (max-width: 1700px) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        @media (max-width: $md) {
+          margin-left: 0;
+          max-width: 100%;
+          margin-top: 20px;
+          flex-wrap: nowrap;
+          overflow: scroll;
+        }
+
+        .photo {
+          margin-bottom: 29px;
+          margin-left: 24px;
+          float: left;
+
+          @media (max-width: 1700px) {
+            float: none;
+            width: 45%;
+            margin-left: 15px;
+            margin-bottom: 15px;
+          }
+
+          @media (max-width: $md) {
+            margin: 0 21px 0 0;
+            min-width: 240px;
+
+            &:last-of-type {
+              margin: 0;
+            }
+          }
+
+          &:nth-child(2) {
+            float: right;
+            margin-top: 50px;
+
+            @media (max-width: 1700px) {
+              float: none;
+              margin-top: 0;
+            }
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            max-width: 408px;
+            border-radius: 4px;
+
+            @media (max-width: $md) {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .control-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 146px);
+    border-top: 2px solid $semi-gray;
+    border-bottom: 2px solid $semi-gray;
+    margin-top: 50px;
+    padding: 20px 0;
+    margin-left: 146px;
+
+    @media (max-width: $lg) {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    .slide-number {
+      font-size: 13px;
+      font-weight: 500;
+      color: $gray;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: $gray;
+
+      &.prev {
+        svg {
+          margin-right: 10px;
+        }
+      }
+
+      &.next {
+        svg {
+          margin-left: 10px;
+        }
+      }
+
+      svg path {
+        transition: fill $delay;
+        fill: $gray;
+      }
+
+      &:hover {
+        color: $orange;
+
+        svg path {
+          fill: $orange;
+        }
+      }
+    }
+  }
+}

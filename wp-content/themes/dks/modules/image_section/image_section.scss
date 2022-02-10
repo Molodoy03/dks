@@ -1,0 +1,27 @@
+@import '../../src/scss/components/vars';
+
+section.image_section {
+  padding: 50px 0 100px;
+
+  @media (max-width: $lg) {
+    padding: 40px 0 85px;
+  }
+
+  @media (max-width: $md) {
+    padding: 35px 0 75px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 30px 0 60px;
+  }
+
+  @media (max-width: $xs) {
+    padding: 25px 0 50px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+  }
+}

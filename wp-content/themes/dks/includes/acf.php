@@ -56,6 +56,10 @@ function modules()
                 get_template_part('modules/calc_section/calc_section');
             } elseif (get_row_layout() == 'hero_section2_service') {
                 get_template_part('modules/hero_section2_service/hero_section2_service');
+            } elseif (get_row_layout() == 'image_section') {
+                get_template_part('modules/image_section/image_section');
+            } elseif (get_row_layout() == 'export_work') {
+                get_template_part('modules/export_work/export_work');
             }
         }
     }

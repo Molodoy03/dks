@@ -8,3 +8,4 @@ add_image_size('s_115_110', 115, 110);
 add_image_size('s_845_999', 845, 999);
 add_image_size('s_945_999', 945, 999);
 add_image_size('s_986_999', 986, 999);
+add_image_size('s_408_999', 408, 999);
