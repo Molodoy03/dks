@@ -34,6 +34,8 @@ input[type="submit"] {
   min-height: 40px;
   background-color: $orange;
   border-radius: 4px;
+  border: 0;
+  outline: none;
   @include buttonHover();
 
   @media (max-width: 1400px) {

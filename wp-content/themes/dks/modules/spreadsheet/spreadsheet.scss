@@ -7,6 +7,14 @@ section.spreadsheet {
     padding: 25px 0 52px 0;
   }
 
+  &.table-names h2 {
+    margin-bottom: 20px;
+
+    @media (max-width: $xs) {
+      margin-bottom: 25px;
+    }
+  }
+
   h2 {
     text-align: center;
     margin: 0 0 75px 0;
@@ -18,11 +26,14 @@ section.spreadsheet {
   }
 
   .spreadsheets {
-    .spreadsheet {
-      margin-bottom: 43px;
-      border: 2px solid $semi-gray;
-      box-shadow: 4px 4px 35px 6px rgba(234, 226, 226, 0.3);
-      border-radius: 5px;
+    h5 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 54px;
+
+      @media (max-width: $md) {
+        margin-bottom: 40px;
+      }
 
       @media (max-width: $sm) {
         margin-bottom: 30px;
@@ -30,6 +41,22 @@ section.spreadsheet {
 
       @media (max-width: $xs) {
         margin-bottom: 20px;
+      }
+    }
+
+    .spreadsheet {
+      border: 2px solid $semi-gray;
+      box-shadow: 4px 4px 35px 6px rgba(234, 226, 226, 0.3);
+      border-radius: 5px;
+      max-width: 1428px;
+      margin: 0 auto 43px;
+
+      @media (max-width: $sm) {
+        margin: 0 auto 30px;
+      }
+
+      @media (max-width: $xs) {
+        margin: 0 auto 20px;
       }
 
       &:last-of-type {
@@ -223,5 +250,13 @@ section.spreadsheet {
         }
       }
     }
+  }
+}
+
+.single-services section.spreadsheet {
+  padding: 50px 0;
+
+  @media (max-width: $xs) {
+    padding: 25px 0 25px 0;
   }
 }

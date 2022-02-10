@@ -2,7 +2,7 @@
 $s_title = get_sub_field('s_title');
 
 if (!empty($s_title) || have_rows('s_blocks')) {
-        wp_enqueue_style('statistics_styles', get_template_directory_uri() . '/static/css/modules/statistics/statistics.css', '', '', 'all');
+    wp_enqueue_style('statistics_styles', get_template_directory_uri() . '/static/css/modules/statistics/statistics.css', '', '', 'all');
 
     wp_enqueue_script('waypoints_js', 'http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', '', '', true);
     wp_enqueue_script('counterup_js', 'https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js', ['waypoints_js'], '', true);

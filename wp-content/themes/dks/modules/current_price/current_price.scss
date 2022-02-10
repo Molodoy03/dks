@@ -1,0 +1,152 @@
+@import '../../src/scss/components/vars';
+
+section.current_price {
+  padding-bottom: 100px;
+
+  @media (max-width: $lg) {
+    padding-bottom: 85px;
+  }
+
+  @media (max-width: $md) {
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: $sm) {
+    padding-bottom: 65px;
+  }
+
+  @media (max-width: $xs) {
+    padding-bottom: 57px;
+  }
+
+  .container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+
+  .main-holder {
+    padding: 70px 146px;
+
+    @media (max-width: $lg) {
+      padding: 70px;
+    }
+
+    @media (max-width: $md) {
+      padding: 70px 30px;
+    }
+
+    @media (max-width: $sm) {
+      padding: 60px 15px;
+    }
+
+    @media (max-width: $xs) {
+      padding: 50px 0;
+    }
+
+    h4 {
+      line-height: 64px;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: $white;
+      text-transform: uppercase;
+
+      @media (max-width: $lg) {
+        line-height: 36px;
+      }
+
+      @media (max-width: $xs) {
+        margin-bottom: 9px;
+      }
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 28px;
+      color: $white;
+      max-width: 1280px;
+
+      @media (max-width: $xs) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    .bottom-block {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1235px;
+
+      @media (max-width: $lg) {
+        flex-direction: column;
+      }
+
+      .text {
+        color: $orange;
+        width: 100%;
+        max-width: 699px;
+
+        @media (max-width: $lg) {
+          max-width: 100%;
+        }
+
+        h5, h6 {
+          margin: 0;
+
+          @media (max-width: $xs) {
+            font-size: 19px;
+            display: inline-block;
+          }
+        }
+
+        h6 {
+          margin-top: -2px;
+
+          @media (max-width: $xs) {
+            margin-top: 0;
+          }
+        }
+      }
+
+      form {
+        margin-left: 34px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+        min-width: 502px;
+        max-width: 502px;
+
+        @media (max-width: $lg) {
+          margin-left: 0;
+          margin-top: 20px;
+          min-width: 0;
+        }
+
+        @media (max-width: $sm) {
+          flex-direction: column;
+        }
+
+        .wpcf7-response-output {
+          color: $white;
+        }
+
+        input:not([type="submit"]) {
+          max-width: 262px;
+        }
+
+        input[type="submit"] {
+          min-width: 210px;
+          margin-left: 30px;
+
+          @media (max-width: $sm) {
+            margin-left: 0;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

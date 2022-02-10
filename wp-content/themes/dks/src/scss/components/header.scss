@@ -286,9 +286,10 @@
 
               &::before {
                 content: '';
+                z-index: 1;
                 position: absolute;
-                bottom: -30px;
-                height: 30px;
+                bottom: -24px;
+                height: 20px;
                 width: 100%;
               }
 

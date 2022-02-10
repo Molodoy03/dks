@@ -1,10 +1,11 @@
 <?php
 $s_heading = get_sub_field('s_heading');
+$s_show_table_name = get_sub_field('s_show_table_name');
 
 if (!empty($s_heading) || have_rows('s_spreadsheets')) {
     wp_enqueue_style('spreadsheet_styles', get_template_directory_uri() . '/static/css/modules/spreadsheet/spreadsheet.css', '', '', 'all'); ?>
 
-    <section class="spreadsheet">
+    <section class="spreadsheet <?php echo $s_show_table_name ? 'table-names' : ''; ?>">
         <div class="container">
             <?php if (!empty($s_heading)) { ?>
                 <h2>
@@ -18,7 +19,10 @@ if (!empty($s_heading) || have_rows('s_spreadsheets')) {
                         the_row();
                         $spreedsheet = get_sub_field('spreedsheet');
 
-                        if (!empty($spreedsheet)) { ?>
+                        if (!empty($spreedsheet)) {
+                            if ($s_show_table_name) { ?>
+                                <h5><?php echo get_the_title($spreedsheet); ?></h5>
+                            <?php } ?>
                             <div class="spreadsheet">
                                 <?php if (have_rows('cols', $spreedsheet)) { ?>
                                     <div class="cols">

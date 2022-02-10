@@ -1,6 +1,6 @@
 {
     "key": "group_61f682dab3a7f",
-    "title": "Theme options",
+    "title": "Настройки темы",
     "fields": [
         {
             "key": "field_61f68cb29952b",
@@ -588,7 +588,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-theme-options"
+                "value": "acf-options-nastrojki-temy"
             }
         ]
     ],
@@ -601,5 +601,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644182963
+    "modified": 1644456162
 }

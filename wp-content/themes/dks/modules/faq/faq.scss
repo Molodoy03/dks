@@ -23,6 +23,7 @@ section.faq {
 
   h2 {
     margin: 0 0 39px 0;
+    text-transform: uppercase;
 
     @media (max-width: $lg) {
       text-align: center;
@@ -115,4 +116,8 @@ section.faq {
       display: none;
     }
   }
+}
+
+.single-services section.faq {
+  margin-top: 0;
 }

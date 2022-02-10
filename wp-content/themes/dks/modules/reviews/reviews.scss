@@ -74,8 +74,17 @@ section.reviews {
             display: none;
           }
 
+          &:hover {
+            color: $semi-black;
+
+            svg path {
+              fill: $semi-black;
+            }
+          }
+
           svg path {
             fill: $orange;
+            transition: fill $delay;
           }
         }
       }
@@ -107,5 +116,13 @@ section.reviews {
         }
       }
     }
+  }
+}
+
+.single-services section.reviews {
+  padding-top: 35px;
+
+  @media (max-width: $xs) {
+    padding-top: 25px;
   }
 }

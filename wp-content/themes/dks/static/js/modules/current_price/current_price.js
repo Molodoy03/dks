@@ -1,0 +1,1 @@
+!function(n){n(document).on("ready",(function(){let e=n("input.phone-mask");e.length&&e.mask("+7 (999)999-99-99")}))}(jQuery);

@@ -10,8 +10,8 @@ function my_acf_json_save_point($path)
 // Add ACF Page Options
 if (function_exists('acf_add_options_page')) {
     $parent = acf_add_options_page(array(
-        'page_title' => __('Theme options'),
-        'menu_title' => __('Theme options'),
+        'page_title' => __('Настройки темы'),
+        'menu_title' => __('Настройки темы'),
     ));
 }
 
@@ -46,6 +46,16 @@ function modules()
                 get_template_part('modules/about_us/about_us');
             } elseif (get_row_layout() == 'documentation') {
                 get_template_part('modules/documentation/documentation');
+            } elseif (get_row_layout() == 'hero_section1_service') {
+                get_template_part('modules/hero_section1_service/hero_section1_service');
+            } elseif (get_row_layout() == 'reviews_service') {
+                get_template_part('modules/reviews_service/reviews_service');
+            } elseif (get_row_layout() == 'current_price') {
+                get_template_part('modules/current_price/current_price');
+            } elseif (get_row_layout() == 'calc_section') {
+                get_template_part('modules/calc_section/calc_section');
+            } elseif (get_row_layout() == 'hero_section2_service') {
+                get_template_part('modules/hero_section2_service/hero_section2_service');
             }
         }
     }

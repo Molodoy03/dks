@@ -1,0 +1,119 @@
+form {
+  position: relative;
+
+  .wpcf7-not-valid-tip {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: $montserrat;
+    margin-top: 8px;
+  }
+
+  .wpcf7-response-output {
+    margin: 20px 0 0 0 !important;
+    bottom: -100%;
+    padding: 10px !important;
+    font-size: 13px;
+    font-family: $montserrat;
+    font-weight: 500;
+  }
+
+  .wpcf7-spinner {
+    position: absolute;
+    bottom: -40px;
+    margin: 0;
+    right: 0;
+  }
+
+  input:not([type="submit"]) {
+    padding: 14px 20px;
+    border-radius: 4px;
+    background-color: $gray-2;
+    color: $gray-3;
+    font-weight: 500;
+    font-size: 13px;
+    border: 0;
+    min-height: 50px;
+    outline: none;
+    font-family: $montserrat;
+  }
+
+  input[type="submit"] {
+    min-height: 50px;
+  }
+
+  select {
+    background: $gray-2;
+    border-radius: 4px;
+    height: 50px;
+    padding: 0 20px;
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 13px;
+    color: $gray;
+    border: 0;
+    outline: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 17px) 50%;
+    background-size: 18px;
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.53228 11.7803C9.23939 12.0732 8.76452 12.0732 8.47162 11.7803L3.97162 7.28033C3.67873 6.98744 3.67873 6.51256 3.97162 6.21967C4.26452 5.92678 4.73939 5.92678 5.03228 6.21967L9.00195 10.1893L12.9716 6.21967C13.2645 5.92678 13.7394 5.92678 14.0323 6.21967C14.3252 6.51256 14.3252 6.98744 14.0323 7.28033L9.53228 11.7803Z' fill='%23838383'/%3E%3C/svg%3E%0A");
+  }
+
+  .wpcf7-radio {
+    .wpcf7-list-item {
+      margin: 0;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      input {
+        margin: 0;
+        width: 14px;
+        height: 14px;
+        min-height: 0;
+        color: $orange;
+        display: none;
+
+        &:checked + span::after {
+          background-color: $orange;
+        }
+      }
+
+      .wpcf7-list-item-label {
+        font-family: $montserrat;
+        font-weight: 500;
+        font-size: 13px;
+        color: $semi-black;
+        position: relative;
+        padding-left: 26px;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          border: 1px solid $orange;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          border-radius: 50%;
+          background-color: rgba(0,0,0,0);
+          transition: background-color $delay;
+          width: 6px;
+          height: 6px;
+        }
+      }
+    }
+  }
+}

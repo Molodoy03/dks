@@ -11,7 +11,7 @@
 
     let menuItemHasChildren = $('.header .menu-holder li.menu-item-has-children');
 
-    if(menuItemHasChildren.length) {
+    if(menuItemHasChildren.length && $(window).width() < '576') {
         menuItemHasChildren.on('click', function(e) {
             e.preventDefault();
 
