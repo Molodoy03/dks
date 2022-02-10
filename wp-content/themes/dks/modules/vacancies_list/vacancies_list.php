@@ -50,7 +50,7 @@
                                         <?php } ?>
 
                                         <div class="bottom-block">
-                                            <button>
+                                            <button class="open_send_resume_modal">
                                                 <?php _e('Отправить резюме', THEME_NAME); ?>
                                             </button>
                                         </div>

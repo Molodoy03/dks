@@ -110,7 +110,7 @@
 
                 <div class="error-text">
                     <span><?php _e('Нашли ошибку в работе сайта?', THEME_NAME); ?></span>
-                    <button><?php _e('Напишите', THEME_NAME); ?></button>
+                    <button class="open_error_modal"><?php _e('Напишите', THEME_NAME); ?></button>
                 </div>
             </div>
         </div>

@@ -166,3 +166,183 @@ img.alignright, .wp-caption.alignright {
   }
 }
 /* END STYLES FOR WP CONTENT */
+
+.modal-parent {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+
+  .container {
+    padding: 30px 0;
+    height: 100vh;
+    max-width: 554px;
+  }
+
+  &.photo_rating_modal {
+    .additional-text {
+      margin: 30px 0;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      color: $gray-3;
+      max-width: 100%;
+    }
+  }
+
+  &.call_me_modal {
+    .text {
+      text-align: center;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 22px;
+      max-width: 440px;
+      margin: -10px auto 30px;
+      color: $gray-3;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+    }
+  }
+
+  &.send_resume_modal {
+    .fake-upload {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.error_modal {
+    textarea {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.modal {
+  overflow-y: scroll;
+  max-height: calc(100vh - 60px);
+  background-color: $white;
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px 22px 52px;
+
+  .close-modal-btn {
+    width: 40px;
+    height: 40px;
+    background: $semi-gray;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: $semi-black;
+    }
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wpcf7-form-control-wrap {
+      margin-bottom: 10px;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    input.name_f {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 5.25C12 6.90685 10.6569 8.25 9 8.25C7.34315 8.25 6 6.90685 6 5.25C6 3.59315 7.34315 2.25 9 2.25C10.6569 2.25 12 3.59315 12 5.25Z' stroke='%23838383' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9 10.5C6.10051 10.5 3.75 12.8505 3.75 15.75H14.25C14.25 12.8505 11.8995 10.5 9 10.5Z' stroke='%23838383' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-position: calc(100% - 20px) 50%;
+      background-size: 18px;
+      background-repeat: no-repeat;
+    }
+
+    input.phone-mask {
+      background-position: calc(100% - 20px) 50%;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.25 3.75C2.25 2.92157 2.92157 2.25 3.75 2.25H6.20943C6.53225 2.25 6.81886 2.45657 6.92094 2.76283L8.0443 6.13291C8.16233 6.48699 8.00203 6.87398 7.6682 7.0409L5.97525 7.88737C6.80194 9.72091 8.27909 11.1981 10.1126 12.0247L10.9591 10.3318C11.126 9.99796 11.513 9.83767 11.8671 9.9557L15.2372 11.0791C15.5434 11.1811 15.75 11.4677 15.75 11.7906V14.25C15.75 15.0784 15.0784 15.75 14.25 15.75H13.5C7.2868 15.75 2.25 10.7132 2.25 4.5V3.75Z' stroke='%23838383' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+
+    input.email_f {
+      background-position: calc(100% - 20px) 50%;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.25 6L8.16795 9.9453C8.6718 10.2812 9.3282 10.2812 9.83205 9.9453L15.75 6M3.75 14.25H14.25C15.0784 14.25 15.75 13.5784 15.75 12.75V5.25C15.75 4.42157 15.0784 3.75 14.25 3.75H3.75C2.92157 3.75 2.25 4.42157 2.25 5.25V12.75C2.25 13.5784 2.92157 14.25 3.75 14.25Z' stroke='%23838383' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+
+    textarea.text_f {
+      background-position: calc(100% - 20px) 11px;
+      background-size: 18px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.25 3.75H4.5C3.67157 3.75 3 4.42158 3 5.25V13.5C3 14.3284 3.67157 15 4.5 15H12.75C13.5784 15 14.25 14.3284 14.25 13.5V9.75M13.1893 2.68934C13.7751 2.10355 14.7249 2.10355 15.3107 2.68934C15.8964 3.27513 15.8964 4.22487 15.3107 4.81066L8.87132 11.25H6.75L6.75 9.12868L13.1893 2.68934Z' stroke='%23838383' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    }
+
+    .fake-upload {
+      cursor: pointer;
+      border-bottom: 1px solid $semi-gray;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 13px;
+      font-style: italic;
+      color: $gray-3;
+      width: 100%;
+      position: relative;
+      transition: color $delay;
+
+      &:hover {
+        color: $semi-black;
+      }
+
+      svg {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-right: 11px;
+      }
+
+      .wpcf7-form-control-wrap {
+        display: none;
+      }
+    }
+
+    .req_fields {
+      font-weight: 500;
+      font-size: 13px;
+      color: $gray-3;
+      margin-top: 20px;
+    }
+
+    input[type="submit"] {
+      min-width: 210px;
+    }
+  }
+}

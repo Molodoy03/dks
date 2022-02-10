@@ -34,7 +34,7 @@ if (!empty($s_title) || !empty($s_nomer_telefona) || !empty($s_tekst) || have_ro
 
             if (!empty($s_knopka)) { ?>
                 <div class="btn-holder">
-                    <button class="button"><?php echo $s_knopka; ?></button>
+                    <button class="button open_call_me_modal"><?php echo $s_knopka; ?></button>
                 </div>
             <?php }
 

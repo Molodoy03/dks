@@ -38,7 +38,7 @@ if (!empty($s_title) || !empty($s_advantages_list)) {
                                         <h6><?php echo $name; ?></h6>
                                     <?php }
                                     if (!empty($btn_text)) { ?>
-                                        <button class="button normal"><?php echo $btn_text; ?></button>
+                                        <button class="button normal open_call_me_modal"><?php echo $btn_text; ?></button>
                                     <?php } ?>
                                 </div>
                             <?php } ?>
@@ -57,7 +57,6 @@ if (!empty($s_title) || !empty($s_advantages_list)) {
                                         <div class="text"><?php echo $text; ?></div>
                                     <?php } ?>
                                 </div>
-
 
                                 <svg width="9" height="8" viewBox="0 0 9 8" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">

@@ -24,7 +24,7 @@ form {
     right: 0;
   }
 
-  input:not([type="submit"]) {
+  input:not([type="submit"]), textarea {
     padding: 14px 20px;
     border-radius: 4px;
     background-color: $gray-2;
@@ -35,6 +35,12 @@ form {
     min-height: 50px;
     outline: none;
     font-family: $montserrat;
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+    width: 100%;
   }
 
   input[type="submit"] {

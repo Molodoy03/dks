@@ -183,7 +183,7 @@
                     <div class="right-block">
                         <?php $h_knopka = get_field('h_knopka', 'option');
                         if (!empty($h_knopka)) { ?>
-                            <button class="button">
+                            <button class="button open_photo_rating_modal">
                                 <?php echo $h_knopka['title']; ?>
                             </button>
                         <?php }
