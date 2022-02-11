@@ -5,7 +5,7 @@ $s_image = get_sub_field('s_image');
 if (!empty($s_heading) || have_rows('s_clients')) {
     wp_enqueue_style('our_clients_styles', get_template_directory_uri() . '/static/css/modules/our_clients/our_clients.css', '', '', 'all'); ?>
 
-    <section class="our_clients">
+    <section class="our_clients wow fadeIn">
         <div class="container">
             <?php if (!empty($s_heading)) { ?>
                 <h2>

@@ -6,7 +6,7 @@ if (have_rows('t_faq_blocks', 'option')) {
     wp_enqueue_style('faq_styles', get_template_directory_uri() . '/static/css/modules/faq/faq.css', '', '', 'all'); ?>
 
     <section class="faq" itemscope itemtype="https://schema.org/FAQPage">
-        <div class="container">
+        <div class="container wow fadeIn">
             <?php if (!empty($s_title)) { ?>
                 <h2>
                     <?php echo $s_title; ?>

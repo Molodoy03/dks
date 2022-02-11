@@ -9,7 +9,7 @@ if (!empty($s_title) || !empty($s_bg_photo) || !empty($s_text)) {
     wp_enqueue_script('masked_input_js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js', '', '', true);
     wp_enqueue_script('current_price_js', get_template_directory_uri() . '/static/js/modules/current_price/current_price.js', ['masked_input_js'], '', true); ?>
 
-    <section class="current_price">
+    <section class="current_price wow fadeIn">
         <div class="container"
              <?php if (!empty($s_bg_photo)) { ?>style="background-image: url('<?php echo wp_get_attachment_image_url($s_bg_photo, 'full'); ?>')"<?php } ?>>
             <div class="main-holder">

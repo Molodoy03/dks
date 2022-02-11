@@ -11,7 +11,7 @@ if (!empty($s_title) || !empty($s_subtitle) || !empty($t_punkty_priema_metallolo
         <svg width="987" height="713" viewBox="0 0 987 713" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H986.282L0 713V0Z" fill="#FF5718"/>
         </svg>
-        <div class="container">
+        <div class="container wow fadeIn">
             <?php if (!empty($s_title)) { ?>
                 <h2>
                     <?php echo $s_title; ?>

@@ -4,7 +4,7 @@ $s_title = get_sub_field('s_title');
 if (!empty($s_title) || have_rows('istochniki')) {
     wp_enqueue_style('reviews_styles', get_template_directory_uri() . '/static/css/modules/reviews/reviews.css', '', '', 'all'); ?>
 
-    <section class="reviews">
+    <section class="reviews wow fadeIn">
         <div class="container">
             <?php if (!empty($s_title)) { ?>
                 <h2>

@@ -9,7 +9,7 @@ if (!empty($services_list)) {
             <rect x="-1" y="763.216" width="1007.79" height="2193.41" rx="4" transform="rotate(-49.3153 -1 763.216)" fill="#F8F8F8"/>
         </svg>
 
-        <div class="container">
+        <div class="container wow fadeIn">
             <div class="items">
                 <?php foreach ($services_list as $service_id) {
                     $title = get_the_title($service_id);

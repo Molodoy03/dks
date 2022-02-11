@@ -10,7 +10,7 @@ if (have_rows('s_raboty')) {
     wp_enqueue_script('slick-js', get_template_directory_uri() . '/static/js/slick.min.js', array('jquery'), '', true);
     wp_enqueue_script('export_work_js', get_template_directory_uri() . '/static/js/modules/export_work/export_work.js', array('slick-js'), '', true); ?>
 
-    <section class="export_work">
+    <section class="export_work wow fadeIn">
         <div class="container">
             <?php if (!empty($s_title)) { ?>
                 <h2 class="main"><?php echo $s_title; ?></h2>

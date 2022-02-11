@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer wow fadeInUp">
     <div class="container">
         <?php
         $f_logo = get_field('f_logo', 'options');

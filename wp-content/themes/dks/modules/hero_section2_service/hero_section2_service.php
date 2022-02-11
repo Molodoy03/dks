@@ -12,7 +12,7 @@ if (!empty($s_title) || !empty($s_kartinka) || have_rows('s_preimushhestva')) {
                   fill="#F8F8F8"/>
         </svg>
 
-        <div class="container">
+        <div class="container wow fadeIn">
             <div class="breadcrumbs">
                 <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope
@@ -32,12 +32,12 @@ if (!empty($s_title) || !empty($s_kartinka) || have_rows('s_preimushhestva')) {
         </div>
 
         <?php if (!empty($s_kartinka)) { ?>
-            <div class="image">
+            <div class="image wow fadeIn">
                 <?php echo wp_get_attachment_image($s_kartinka, 's_986_999'); ?>
             </div>
         <?php } ?>
 
-        <div class="container narrow">
+        <div class="container narrow wow fadeIn">
             <div class="main-holder">
                 <?php if (!empty($s_title)) { ?>
                     <h1><?php echo $s_title; ?></h1>

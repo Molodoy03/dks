@@ -5,7 +5,7 @@ $s_show_table_name = get_sub_field('s_show_table_name');
 if (!empty($s_heading) || have_rows('s_spreadsheets')) {
     wp_enqueue_style('spreadsheet_styles', get_template_directory_uri() . '/static/css/modules/spreadsheet/spreadsheet.css', '', '', 'all'); ?>
 
-    <section class="spreadsheet <?php echo $s_show_table_name ? 'table-names' : ''; ?>">
+    <section class="spreadsheet wow fadeIn <?php echo $s_show_table_name ? 'table-names' : ''; ?>">
         <div class="container">
             <?php if (!empty($s_heading)) { ?>
                 <h2>

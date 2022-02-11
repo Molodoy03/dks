@@ -9,7 +9,7 @@ if (!empty($s_title) || !empty($s_advantages_list)) {
         <svg width="945" height="694" viewBox="0 0 945 694" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M960 0H0L960 694V0Z" fill="#F8F8F8"/>
         </svg>
-        <div class="container">
+        <div class="container wow fadeIn">
             <?php if (!empty($s_title)) { ?>
                 <h2>
                     <?php echo $s_title; ?>

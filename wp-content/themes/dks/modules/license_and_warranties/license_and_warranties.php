@@ -12,7 +12,7 @@ if (!empty($s_text_1) || !empty($s_text_2_1) || !empty($s_text_2_2) || have_rows
 
     wp_enqueue_script('fancybox_js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', '', '', true); ?>
 
-    <section class="license_and_warranties">
+    <section class="license_and_warranties wow fadeIn">
         <svg width="987" height="713" viewBox="0 0 987 713" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-6.10352e-05 0H986.282L-6.10352e-05 713V0Z"
                   fill="#FF5718"/>

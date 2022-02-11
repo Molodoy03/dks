@@ -1,6 +1,6 @@
 <?php wp_enqueue_style('vacancies_list_styles', get_template_directory_uri() . '/static/css/modules/vacancies_list/vacancies_list.css', '', '', 'all'); ?>
 
-<section class="vacancies_list">
+<section class="vacancies_list wow fadeIn">
     <svg width="666" height="2192" viewBox="0 0 666 2192" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="-1" y="763.216" width="1007.79" height="2193.41" rx="4" transform="rotate(-49.3153 -1 763.216)" fill="#F8F8F8"/>
     </svg>

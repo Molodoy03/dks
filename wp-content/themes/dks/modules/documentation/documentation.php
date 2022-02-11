@@ -5,7 +5,7 @@ $s_image = get_sub_field('s_image');
 if (have_rows('s_links') || !empty($s_image)) {
     wp_enqueue_style('documentation_styles', get_template_directory_uri() . '/static/css/modules/documentation/documentation.css', '', '', 'all'); ?>
 
-    <section class="documentation <?php echo !empty($s_image) ? 'image' : ''; ?>">
+    <section class="documentation wow fadeIn <?php echo !empty($s_image) ? 'image' : ''; ?>">
         <div class="container">
             <?php if (!empty($s_image)) { ?>
                 <div class="image">

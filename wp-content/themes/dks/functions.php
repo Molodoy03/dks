@@ -49,10 +49,11 @@ foreach ($include_folders as $inc_folder) {
  * Enqueue style/script files
  */
 function inclusion_enqueue() {
+    wp_enqueue_style('animate-css', get_template_directory_uri() . '/static/css/animate.min.css', [], '', 'all');
     wp_enqueue_style('main', get_template_directory_uri() . '/static/css/main.min.css', [], '', 'all');
     wp_enqueue_style('style', get_template_directory_uri() . '/style.css', ['main'], '', 'all');
 
-    //wp_enqueue_script('wow-script', get_template_directory_uri() . '/static/js/wow.min.js', '', $ver_num, true);
+    wp_enqueue_script('wow-script', get_template_directory_uri() . '/static/js/wow.min.js', '', $ver_num, true);
     wp_enqueue_script('scripts', get_template_directory_uri() . '/static/js/main.min.js', ['jquery'], '', true);
 }
 add_action('wp_enqueue_scripts', 'inclusion_enqueue');

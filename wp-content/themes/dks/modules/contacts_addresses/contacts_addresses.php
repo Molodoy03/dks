@@ -4,7 +4,7 @@ if (have_rows('punkty_priema')) {
 
     wp_enqueue_script('contacts_addresses_js', get_template_directory_uri() . '/static/js/modules/contacts_addresses/contacts_addresses.js', '', '', true); ?>
 
-    <section class="contacts_addresses">
+    <section class="contacts_addresses wow fadeIn">
         <svg width="666" height="2192" viewBox="0 0 666 2192" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="-1" y="763.216" width="1007.79" height="2193.41" rx="4" transform="rotate(-49.3153 -1 763.216)" fill="#F8F8F8"/>
         </svg>

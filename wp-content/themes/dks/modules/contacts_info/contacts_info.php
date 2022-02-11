@@ -1,6 +1,6 @@
 <?php wp_enqueue_style('contacts_info_styles', get_template_directory_uri() . '/static/css/modules/contacts_info/contacts_info.css', '', '', 'all'); ?>
 
-<section class="contacts_info">
+<section class="contacts_info wow fadeIn    ">
     <svg width="396" height="870" viewBox="0 0 396 870" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="-472" y="396.522" width="592.389" height="640" rx="4" transform="rotate(-42.1481 -472 396.522)"
               fill="#F8F8F8"/>

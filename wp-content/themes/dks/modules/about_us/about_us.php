@@ -7,7 +7,7 @@ $s_photo = get_sub_field('s_photo');
 if (!empty($s_title) || !empty($s_tekst) || !empty($s_tekst2) || !empty($s_photo)) {
     wp_enqueue_style('about_us_styles', get_template_directory_uri() . '/static/css/modules/about_us/about_us.css', '', '', 'all'); ?>
 
-    <section class="about_us">
+    <section class="about_us wow fadeIn">
         <svg class="black-svg" width="986" height="713" viewBox="0 0 986 713" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000305176 0H986.282V713H986.282L-0.000305176 0Z" fill="#282525"/>
         </svg>

@@ -12,7 +12,7 @@ if (!empty($s_title) || !empty($s_nomer_telefona) || !empty($s_tekst) || have_ro
             <rect x="-573" y="485.463" width="724.93" height="783.193" rx="4" transform="rotate(-42.1481 -573 485.463)" fill="#F8F8F8"/>
         </svg>
 
-        <div class="container">
+        <div class="container wow fadeIn">
             <?php if (!empty($s_title)) { ?>
                 <h2>
                     <?php echo $s_title; ?>

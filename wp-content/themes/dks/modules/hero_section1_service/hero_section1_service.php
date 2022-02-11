@@ -10,7 +10,7 @@ $dop_usluga_tekst = get_sub_field('dop_usluga_tekst');
 if (!empty($s_title) || !empty($s_kartinka) || !empty($s_icon) || !empty($s_tekst) || !empty($s_czena)) {
     wp_enqueue_style('hero_section1_service_styles', get_template_directory_uri() . '/static/css/modules/hero_section1_service/hero_section1_service.css', '', '', 'all'); ?>
 
-    <section class="hero_section1_service">
+    <section class="hero_section1_service wow fadeIn">
         <svg width="396" height="870" viewBox="0 0 396 870" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="-472" y="396.522" width="592.389" height="640" rx="4" transform="rotate(-42.1481 -472 396.522)"
                   fill="#F8F8F8"/>

@@ -4,7 +4,7 @@ $s_title = get_sub_field('s_title');
 if (!empty($s_title) || have_rows('otzyvy')) {
     wp_enqueue_style('reviews_service_styles', get_template_directory_uri() . '/static/css/modules/reviews_service/reviews_service.css', '', '', 'all'); ?>
 
-    <section class="reviews-service">
+    <section class="reviews-service wow fadeIn">
         <div class="container">
             <?php if (!empty($s_title)) { ?>
                 <h2>

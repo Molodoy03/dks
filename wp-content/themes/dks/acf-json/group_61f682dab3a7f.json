@@ -104,7 +104,7 @@
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "30",
                         "class": "",
                         "id": ""
                     },
@@ -123,14 +123,48 @@
                     "required": 1,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "45",
                         "class": "",
                         "id": ""
                     },
                     "default_value": "",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_6205403c10f66",
+                    "label": "Название",
+                    "name": "nazvanie",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_6205410cffe45",
+            "label": "Ссылка на страницу Контакты",
+            "name": "h_contact_page_link",
+            "type": "link",
+            "instructions": "Для \"плавающего\" блока на моб.устройствах",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         },
         {
             "key": "field_61f68cbc9952c",
@@ -601,5 +635,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1644456162
+    "modified": 1644511554
 }

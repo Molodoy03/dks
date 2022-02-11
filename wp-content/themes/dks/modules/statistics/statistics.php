@@ -8,7 +8,7 @@ if (!empty($s_title) || have_rows('s_blocks')) {
     wp_enqueue_script('counterup_js', 'https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js', ['waypoints_js'], '', true);
     wp_enqueue_script('statistics_js', get_template_directory_uri() . '/static/js/modules/statistics/statistics.js', ['counterup_js'], '', true); ?>
 
-    <section class="statistics">
+    <section class="statistics wow fadeIn">
         <div class="container">
             <?php if (!empty($s_title)) { ?>
                 <h2>
